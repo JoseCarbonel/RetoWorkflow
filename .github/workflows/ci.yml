@@ -17,5 +17,7 @@ jobs:
       - name: Step 1 - Mensaje inicial
         run: echo "Iniciando validaciones..."
 
-      - name: Step 2 - Validacion exitosa
-        run: echo "Pruebas pasadas correctamente"
+      - name: Step 2 - Simular fallo
+        run: |
+          echo "Error detectado en el pipeline..."
+          exit 1
